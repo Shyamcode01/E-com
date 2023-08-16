@@ -19,11 +19,17 @@ let close=document.querySelector('.close');
 
 //  card 
 
-let card=document.querySelectorAll('.card');
-let btn1=document.querySelector('.btn-1');
+let smallimage=document.querySelectorAll('.card-small-img');
+let fullimage=document.querySelector('.card-full-img');
 
-btn1.addEventListener('click',((e)=>{
-  let cart=e.currentTarget.parentNode.parentNode;
-   cart.classList.add("cart-full");
-   console.log(cart)
-}))
+smallimage.forEach(element => {
+  
+  element.addEventListener('click',(e)=>{
+    let imageurl=e.target;
+     fullimage.src=imageurl.src;
+      console.log(fullimage)
+  })
+  
+});
+
+console.log(fullimage)

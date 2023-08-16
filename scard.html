@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>scard</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/homemedia.css">
-     
+     <link rel="stylesheet" href="scard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-     <header>
+    <!-- header  -->
+    <header>
         <div class="logo-menu">
 
             <i class="bi bi-list menu"></i>
@@ -18,7 +19,7 @@
         </div>
         <ul class="navbar">
             <i class="bi bi-x-square close"></i>
-            <li class="nav-list"><a href="index.html" class="nav-link acive">Home</a></li>
+            <li class="nav-list"><a href="index.html" class="nav-link ">Home</a></li>
             <li class="nav-list"><a href="" class="nav-link">Category</a>
             <ul class="sub-nav">
                 <li class="sub-nav-list"><a href="" class="sub-nav-link">Man</a></li>
@@ -28,9 +29,9 @@
                 <li class="sub-nav-list"><a href="" class="sub-nav-link">Electronic</a></li>
             </ul>
             </li>
-            <li class="nav-list"><a href="#about.html" class="nav-link">About</a></li>
-            <li class="nav-list"><a href="#contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-list"><a href="#help.html" class="nav-link">Help</a></li>
+            <li class="nav-list"><a href="about.html" class="nav-link active">About</a></li>
+            <li class="nav-list"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-list"><a href="help.html" class="nav-link">Help</a></li>
         </ul>
         <div class="cart-m">
             <h3 class="cart-p">0</h3>
@@ -38,131 +39,42 @@
 
         </div>
      </header>
-     <!-- slider iamage -->
-     <div class="slider-container">
-        <div class="slider">
-            <div class="slides">
 
-                <div class="slide">
-                    <div class="image-s"><img src="./photo/image (2).jpg" alt="" class="slide-img"></div>
-                    <div class="slide-text">
-                        <div class="h2">show more page of pages line link</div>
-                        <button class="btn">show more</button>
-                    </div>
+
+     <div class="full-card">
+        <div class="card-show">
+
+            <div class="full-image">
+                <img src="./photo/cartimg/cloth (1).jpg"class="card-full-img" alt="">
+                <div class="small-image">
+                    <img src="./photo/cartimg/cloth (3).jpg" alt="" class="card-small-img">
+                    <img src="./photo/cartimg/cloth (2).jpg" alt="" class="card-small-img">
+                    <img src="./photo/cartimg/cloth (1).jpg" alt="" class="card-small-img">
+                    <img src="./photo/cartimg/cloth (4).jpg" alt="" class="card-small-img">
                 </div>
-
-
+            </div>
+                
+            <div class="full-text">
+                <h2>t-shirt</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsum quasi minus modi repellat nulla?</p>
+                <h3>&#8377; 225  <strike> &#8377; 250</strike></h3>
+                <select id="cart-select">
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select><br>
+                <button class="btn-2 add">Add To Cart</button>
+                <button class="btn-2 add">Buy Now</button>
+                
             </div>
         </div>
      </div>
-     <!-- card page  -->
-
-     <h2 class="card-heading">card item</h2>
-
-     <div class="card-container">
-<!-- card 1 -->
-        <div class="card"onclick="window.location.href='scard.html';">
-            <img class="card-img"src="./photo/cartimg/image (5).jpg" alt=""> 
-            <div class="text-c">
-                <div class="para">Blue shoes is good qulity of this product</div>
-                <div class="star">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-               <div class="btncard"> <button class="btn btn-1">View More</button>
-                <i class="bi bi-bag-plus add-cart"></i>
-                
-            </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img"src="./photo/cartimg/cloth (4).jpg" alt=""> 
-            <div class="text-c">
-                <div class="para">black t-shirt is good qulity of this product</div>
-                <div class="star">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-               <div class="btncard"> <button class="btn btn-1">View More</button>
-                <i class="bi bi-bag-plus add-cart"></i>
-                
-            </div>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img"src="./photo/cartimg/cloth (5).jpg" alt=""> 
-            <div class="text-c">
-                <div class="para"> black is good qulity of this product</div>
-                <div class="star">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-               <div class="btncard"> <button class="btn btn-1">View More</button>
-                <i class="bi bi-bag-plus add-cart"></i>
-                
-            </div>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img"src="./photo/cartimg/cloth (3).jpg" alt=""> 
-            <div class="text-c">
-                <div class="para">shirt is good qulity of this product</div>
-                <div class="star">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-               <div class="btncard"> <button class="btn btn-1">View More</button>
-                <i class="bi bi-bag-plus add-cart"></i>
-                
-            </div>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img"src="./photo/cartimg/image (6).jpg" alt=""> 
-            <div class="text-c">
-                <div class="para">red shirt is good qulity of this product</div>
-                <div class="star">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-               <div class="btncard"> <button class="btn btn-1">View More</button>
-                <i class="bi bi-bag-plus add-cart"></i>
-                
-            </div>
-            </div>
-        </div>
-       
 
 
-     </div>
 
-     <!-- main page  -->
-
-     <div class="page">
-        <div class="page-text">
-            <h2>Best produt best size</h2>
-            <h5>google comminication producti of </h5>
-        </div>
-     </div>
-      
-     <!-- new produt  -->
-     <h2 class="new-product">New Product Item</h2>
+     <!-- cards  -->
+     <h2 class="card-heading">New Items</h2>
 
      <div class="card-container">
 <!-- card 1 -->
@@ -236,7 +148,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img"src="./photo/cartimg/image (6).jpg" alt=""> 
+            <img class="card-img"src="../photo/cartimg/image (6).jpg" alt=""> 
             <div class="text-c">
                 <div class="para">red shirt is good qulity of this product</div>
                 <div class="star">
@@ -258,14 +170,10 @@
      </div>
 
 
-     <div class="comment">
-
-     </div>
 
 
 
      <!-- footer  -->
-
      <footer>
         <div class="foot-logo">
             <div class="logo"><img class="logo-img" src="./photo/logo.jpg" alt=""></div>
@@ -278,9 +186,6 @@
         </div>
         <div class="copy">Copy &copy; Right 2023</div>
      </footer>
-      
-
     <script src="javascript/home.js"></script>
-     
 </body>
 </html>
