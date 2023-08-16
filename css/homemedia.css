@@ -1,0 +1,42 @@
+@media(max-width:1000px){
+    /* menu humber bar */
+    .menu{
+        display: block;
+    }
+
+    /* navbar  */
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        display: none;
+        width: 50%;
+        height: 100vh;
+        background-color: #5e549e;
+        flex-direction: column;
+        text-align: center;
+        transition: 1s ease-in-out;
+        
+    }
+    .nav-list{
+        padding: 0.8rem 0;
+    }
+    .nav-active{
+        left: 0%;
+        display: block;
+        z-index: 9999;
+        
+    }
+     
+    /* sub menu  */
+    .sub-nav{
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .close{
+        display: block;
+        z-index: 99;
+    }
+}
